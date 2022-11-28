@@ -1,0 +1,34 @@
+
+ ALGORITHM checkpoint
+VAR
+    c:CHAR;
+    nbrc,nbrw,nbrv:INTEGER:=0;
+    
+BEGIN
+    REPEAT
+    // read a caracter
+    Read (c) ;  
+    IF (nbrc=0)AND (c=''OR c='.') THEN
+    Write("your first character shoudn't be a space or a period");
+    Read(c);
+    ELSE
+    nbrc:=nbc+1 ;
+IF (c='')  THEN
+    nbrc:=nbc+1 ;
+ END-IF
+IF (c=''OR c='.') THEN 
+    nbrw:=nbw+1 ;
+ END-IF
+ IF (c='a'OR c='o'c='e'OR c='i'OR c='y'OR c='u'OR ) THEN 
+     nbrv:=nbv+1 ;
+END-IF 
+END_IF
+UNTIL (c='.') 
+Write ("length of the sentenece is",nbrc);
+Write ("the number of words is",nbrw);
+Write ("the number of vowels is",nbrv);
+
+
+END
+
+
